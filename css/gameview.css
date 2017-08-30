@@ -1,0 +1,129 @@
+body{
+    background:black;
+    background-image: url('f.jpg');
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;
+    border:0;
+    margin:0;
+}
+canvas{
+    border: 4px solid rgba(0,0,0,0.4);
+    position:relative;
+    z-index:0; 
+}
+#stats{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex; 
+}
+#coin-info{
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex; 
+    margin:1rem;
+    justify-content: center;
+    align-items: center;
+}
+#coin-info .coin-image{
+    max-width: 50px;
+    margin-right:.7rem;
+}
+.coin-cant{
+    font-size:2rem;
+    font-family: sans-serif;
+}
+.coin-image img{
+    width: 100%;
+}
+
+.capa-1{z-index:1;}
+.capa-2{z-index:2;}
+.capa-3{z-index:3;}
+.capa-4{z-index:4;}
+.capa-5{z-index:5;}
+.capa-6{z-index:6;}
+.capa-7{z-index:7;}
+.capa-8{z-index:8;}
+.capa-9{z-index:9;}
+.capa-10{z-index:10;}
+
+.capa{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+}
+.capa.content-center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.canvas-size{
+    width: 1200px;
+    height: 750px;
+}
+.relative-box{
+    position: relative;
+}
+#health-bar .meter > span{
+    background-color: rgb(194, 43, 43);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(194, 43, 43) 37%,
+      rgb(240, 81, 81) 69%
+    );
+}
+#stamina-bar .meter > span{
+    background-color: rgb(43,194,83);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(43,194,83) 37%,
+      rgb(84,240,84) 69%
+    );
+}
+#magic-bar .meter > span{
+    background-color: rgb(43, 129, 194);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(43, 129, 194) 37%,
+      rgb(105, 163, 205) 69%
+    );
+}
+.meter { 
+    height: 12px;  /* Can be anything */
+    width:200px;
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+    padding: 2px;
+    margin:8px 20px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    background-image: linear-gradient(
+      center bottom,
+      white 37%,
+      gray 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+  }

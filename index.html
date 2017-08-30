@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Practica 1 - Inteligencia Artificial</title>
+        <link rel="stylesheet" href="css/gameview.css">
+        <script src="js/phaser.min.js"></script>
+
+    </head>
+    <body>
+
+
+        <div class="capa capa-1 content-center">
+            <div class="canvas-size relative-box">
+                <div id="stats">
+
+
+                    
+                    
+                </div>
+                <div id="coin-info">
+                    <!--<span class="coin-image"><img src="img/other/deposit.png" alt=""></span>-->
+                    <!--<span class="coin-cant">x <i id="coincount">00</i></span>-->
+                </div>
+            </div>
+        </div>
+        <div id="capa-final" class="capa capa-10 content-center"><div class="canvas-size relative-box"></div></div>
+
+        <audio loop  id="background-music">
+            <source src="music/background.ogg" type="audio/ogg">
+            <source src="music/background.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="coin-sound">
+            <source src="music/coin.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="block-sound">
+            <source src="music/block1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="win-sound">
+            <source src="music/finish.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script type="text/javascript" src="js/game.js"></script>
+    <div id="coincount" style="display: none"></div>
+    </body>
+</html>
